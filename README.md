@@ -15,7 +15,7 @@ It was done in a form of a fantasy game and where the following design patterns 
 
 For this laboratory work I decided to implement the following design patterns from the list provided:
 
-- #### Adapter patter
+- #### ![#c5f015]Adapter patter
   
   Adapter method was implemented inside a class, by manipulatinf 2 other classes that is basically an
   implementation of Factory design pattern. 
