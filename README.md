@@ -9,3 +9,8 @@ It was done in a form of a fantasy game and where the following design patterns 
 - Abstarct factory method -> <font color='green'>sword_factory_method.py</font>
 
 - Builder method -> <font color='green'>charcater_builder.py</font>
+
+
+### Laboratory Work 2
+
+In
