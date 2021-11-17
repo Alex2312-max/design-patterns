@@ -1,4 +1,33 @@
 import time
+from ..Lab2.adapter_method import MonsterSpawn
+
+
+# An improvised decorator
+def great_evil(func):
+    def inner(*args, **kwargs):
+        func(*args, **kwargs)
+        return '.... killed the great evil!!'
+    return inner
+
+
+class DemonLord:
+
+    def __str__(self):
+        return 'Return of the Demon Lord'
+
+    @great_evil
+    def action(self):
+        return self
+
+
+class DragonKing:
+
+    def __str__(self):
+        return 'Return of the King of Dragons'
+
+    @great_evil
+    def action(self):
+        return self
 
 
 class SwordsMan:
@@ -15,14 +44,6 @@ class SwordsMan:
         return demon_lord.action()
 
 
-class DemonLord:
-    def __str__(self):
-        return 'Return of the Demon Lord'
-
-    def action(self):
-        return '.... killed the Demon Lord'
-
-
 class Magician:
     def __init__(self, character):
         self.character = character
@@ -35,15 +56,6 @@ class Magician:
         time.sleep(2)
         print(king_dragons.action())
         return king_dragons.action()
-
-
-class DragonKing:
-
-    def __str__(self):
-        return 'Return of the King of Dragons'
-
-    def action(self):
-        return ' killed the King of Dragons'
 
 
 class SwordsManWorld:
@@ -87,6 +99,17 @@ class PathDecision:
         self.hero = None
         self.enemy = None
 
+    def monster_spawn_black_forest(self):
+
+        ''' Adapter method '''
+
+        print('Entering the dark forest...')
+        time.sleep(1)
+        monster_spawn = MonsterSpawn()
+        print(monster_spawn.spawn_process())
+        time.sleep(1)
+        print('Climbing the black mountain...')
+
     def initiate_the_world(self):
         try:
             if self.character.profession == 'SwordsMan':
@@ -94,10 +117,16 @@ class PathDecision:
                 time.sleep(2)
                 self.hero = generate_world.make_character()
                 time.sleep(2)
+                self.monster_spawn_black_forest()
+                time.sleep(2)
                 self.enemy = generate_world.make_enemy()
             else:
                 generate_world = MagicianWorld(self.character)
+                time.sleep(2)
                 self.hero = generate_world.make_character()
+                time.sleep(2)
+                self.monster_spawn_black_forest()
+                time.sleep(2)
                 self.enemy = generate_world.make_enemy()
         except:
             print('Invalid Speciality')
@@ -106,17 +135,9 @@ class PathDecision:
         if self.character.profession == 'SwordsMan':
             time.sleep(2)
             self.hero.kill_demon_lord(self.enemy)
+            print('Mission complete!!!')
         else:
             time.sleep(2)
             self.hero.kill_king_dragons(self.enemy)
+            print('Mission complete!!!')
 
-
-# def main():
-#     player = Player()
-#     player.create_character(profession='Swords man', special_attribute='fire',
-#                             cultivation_path='Legendary swallow path')
-#     character = player.character
-#
-
-# if __name__ == '__main__':
-#     main()
