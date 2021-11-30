@@ -72,3 +72,20 @@ For this laboratory work I decided to implement the following design patterns fr
   
   ![image](https://user-images.githubusercontent.com/55151032/142233208-3f237123-7866-4d64-bd07-50944c8caec4.png)
 
+-----------------------------------------------------------------------------------------------------------------------------------------------
+### Laboratory Work 3
+
+- #### Strategy pattern
+  
+  The Strategy pattern promotes using multiple algorithms to solve a problem. Its killer feature is that it makes it possible to switch algorithms
+  at runtime transparently.
+  
+  ![image](https://user-images.githubusercontent.com/55151032/144117227-c762ab2d-59ee-4201-871a-946b3f219a8a.png)
+  
+  Here we can observ 2 different methods, for 2 types of situation depending on the class of the character chosen. In such a way we can
+  add even more strategies, for different situations for a better control and ensuring a better game experience.
+  
+  ![image](https://user-images.githubusercontent.com/55151032/144117461-59f9c084-4f4a-453c-8d25-35702dddd7f7.png)
+  
+  The strategy pattern was implemented in a form of class, and strategies are methods of this class. Also, above we can see the method that controls 
+  the general logic of the class, and in order to activate new strategies a change in this method is required.
