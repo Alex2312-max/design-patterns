@@ -88,4 +88,5 @@ For this laboratory work I decided to implement the following design patterns fr
   ![image](https://user-images.githubusercontent.com/55151032/144117461-59f9c084-4f4a-453c-8d25-35702dddd7f7.png)
   
   The strategy pattern was implemented in a form of class, and strategies are methods of this class. Also, above we can see the method that controls 
-  the general logic of the class, and in order to activate new strategies a change in this method is required.
+  the general logic of the class, and in order to activate new strategies a change in this method is required. The complete code can be found in 
+  'Lab3.py' file, and is integrated in the abstract factory method from Laboratory Work Nr.1.
