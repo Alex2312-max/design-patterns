@@ -31,7 +31,7 @@ def main():
         what_to_do = input('What do you want to do?\n'
                            + '1. Save the world\n'
                            + '2. Look in your bag\n'
-                           + '3. Party all the night\n')
+                           + '3. Party\n')
 
         if int(what_to_do) == 1:
 
@@ -46,8 +46,8 @@ def main():
             info = InfoBag()
             while True:
                 print('1. Read list of element from your bag\n'
-                      + ' 2. Add material\n'
-                      + ' 3. quit')
+                        + '2. Add material\n'
+                        + '3. quit')
                 key = input('Choose option: ')
                 if key == '1':
                     info.read()

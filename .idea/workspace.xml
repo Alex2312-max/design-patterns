@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2d92436a-1f72-4915-86e7-ed8ae4cf4b59" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab 1/character_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab1/character_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab 1/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab 1/sword_abstract_factory.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab1/sword_abstract_factory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab 1/tavern_factory.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab1/tavern_factory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lab1/sword_abstract_factory.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab1/sword_abstract_factory.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,27 +46,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.main (1)">
-    <configuration name="character-builder" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="design-patterns" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Lab 1" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Alex\Documents\GitHub\design-patterns\Lab 1\character_builder.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="ex" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="design-patterns" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -132,7 +109,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sword_world_rules" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="strategy_pattern" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="design-patterns" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -140,11 +117,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Lab 1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/Lab3" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Alex\Documents\GitHub\design-patterns\Lab 1\sword_abstract_factory.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/Lab3/strategy_pattern.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sword_abstract_factory" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="design-patterns" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/Lab1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/Lab1/sword_abstract_factory.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -157,9 +155,9 @@
       <list>
         <item itemvalue="Python.main (1)" />
         <item itemvalue="Python.ex" />
+        <item itemvalue="Python.sword_abstract_factory" />
+        <item itemvalue="Python.strategy_pattern" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.sword_world_rules" />
-        <item itemvalue="Python.character-builder" />
       </list>
     </recent_temporary>
   </component>

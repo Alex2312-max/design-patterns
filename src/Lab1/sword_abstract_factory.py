@@ -1,9 +1,10 @@
 import time
 from ..Lab2.adapter_method import MonsterSpawn
+from ..Lab3.strategy_pattern import Strategy
 
 
 # An improvised decorator
-def great_evil(func):
+def decorator_action(func):
     def inner(*args, **kwargs):
         func(*args, **kwargs)
         return '.... killed the great evil!!'
@@ -13,9 +14,9 @@ def great_evil(func):
 class DemonLord:
 
     def __str__(self):
-        return 'Return of the Demon Lord'
+        return 'The Demon Lord appeared...'
 
-    @great_evil
+    @decorator_action
     def action(self):
         return self
 
@@ -23,9 +24,9 @@ class DemonLord:
 class DragonKing:
 
     def __str__(self):
-        return 'Return of the King of Dragons'
+        return 'The King of Dragons appeared...'
 
-    @great_evil
+    @decorator_action
     def action(self):
         return self
 
@@ -119,6 +120,13 @@ class PathDecision:
                 time.sleep(2)
                 self.monster_spawn_black_forest()
                 time.sleep(2)
+                print('You entered the misty mountains and were cursed....')
+                time.sleep(2)
+                strategy = Strategy('SwordsMan')
+                strategy.strategy_chooser()
+                time.sleep(2)
+                print('Traveling to your final destination...')
+                time.sleep(2)
                 self.enemy = generate_world.make_enemy()
             else:
                 generate_world = MagicianWorld(self.character)
@@ -126,6 +134,13 @@ class PathDecision:
                 self.hero = generate_world.make_character()
                 time.sleep(2)
                 self.monster_spawn_black_forest()
+                time.sleep(2)
+                print('You entered the misty mountains and were cursed....')
+                time.sleep(2)
+                strategy = Strategy('Magician')
+                strategy.strategy_chooser()
+                time.sleep(2)
+                print('Traveling to your final destination...')
                 time.sleep(2)
                 self.enemy = generate_world.make_enemy()
         except:
